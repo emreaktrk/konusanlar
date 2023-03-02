@@ -21,30 +21,30 @@ class HomePage extends GetResponsiveView<HomeController> {
             dividerColor: Colors.transparent,
             tabs: [
               TabItem(
-                iconData: FontAwesome5.hashtag,
-                label: "gündem",
+                iconData: FontAwesome5.map_marker,
+                label: "hatay",
               ),
               TabItem(
-                iconData: FontAwesome5.hashtag,
-                label: "populer",
+                iconData: FontAwesome5.map_marker,
+                label: "aslantepe",
               ),
               TabItem(
-                iconData: FontAwesome5.hashtag,
-                label: "deprem",
+                iconData: FontAwesome5.map_marker,
+                label: "adana",
               ),
               TabItem(
-                iconData: FontAwesome5.hashtag,
-                label: "vpn",
+                iconData: FontAwesome5.map_marker,
+                label: "istanbul",
               ),
               TabItem(
-                iconData: FontAwesome5.hashtag,
-                label: "hellomoto",
+                iconData: FontAwesome5.map_marker,
+                label: "kurtkoy",
               ),
             ],
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () => controller.navigateCreate(),
           child: const Icon(Icons.post_add),
         ),
         body: Stack(children: [
